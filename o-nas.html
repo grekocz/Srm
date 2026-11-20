@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O nás & Lektori | Škola historického šermu Pelhřimov</title>
+  <meta name="description" content="O Škole historického šermu Pelhřimov, naši lektori a instruktoři, výuka evropských bojových umění (HEMA).">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="bg-[#0f1015] text-slate-100 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- HEADER / NAVIGATION -->
+    <!-- STICKY HEADER / NAVIGATION -->
+    <!-- STICKY HEADER / NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-[100] bg-[#0f1015] shadow-xl border-b border-amber-500/20 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="images/logo.png" alt="Škola historického šermu Pelhřimov" class="h-11 w-auto object-contain group-hover:scale-105 transition-transform">
+        <div class="flex flex-col">
+          <span class="font-bold text-base sm:text-lg tracking-wider text-amber-400 uppercase font-serif leading-none">ŠHŠ Pelhřimov</span>
+          <span class="text-[9px] text-slate-400 tracking-widest uppercase mt-0.5">Škola historického šermu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="o-nas.html" class="text-xs font-semibold text-slate-300 hover:text-amber-400 uppercase tracking-widest transition-colors">ŠKOLA</a>
+        <a href="kurzy.html" class="text-xs font-semibold text-slate-300 hover:text-amber-400 uppercase tracking-widest transition-colors">TRÉNINKY</a>
+        <a href="discipliny.html" class="text-xs font-semibold text-slate-300 hover:text-amber-400 uppercase tracking-widest transition-colors">ZBRANĚ</a>
+        <a href="kontakt.html" class="text-xs font-semibold text-slate-300 hover:text-amber-400 uppercase tracking-widest transition-colors">KONTAKT</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="kontakt.html" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-5 py-2.5 rounded text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all">
+          KONTAKT ➔
+        </a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="md:hidden text-slate-300 hover:text-amber-400 p-2 text-2xl focus:outline-none" aria-label="Otevřít menu">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-drawer" style="background-color: #0f1015 !important; background: #0f1015 !important;" class="mobile-overlay fixed inset-0 flex flex-col justify-between p-6 overflow-y-auto hidden transition-all duration-300">
+      <div class="flex items-center justify-between pb-6 border-b border-amber-500/20">
+        <div class="flex items-center gap-3">
+          <img src="images/logo.png" alt="Logo" class="h-10 w-auto object-contain">
+          <span class="font-bold text-amber-400 font-serif uppercase tracking-wider text-sm">ŠHŠ Pelhřimov</span>
+        </div>
+        <button id="mobile-drawer-close" class="text-slate-300 hover:text-amber-400 text-3xl font-light p-2 focus:outline-none" aria-label="Zavřít menu">
+          ✕
+        </button>
+      </div>
+
+      <nav class="flex flex-col items-center justify-center my-auto py-8 space-y-6 text-center">
+        <a href="o-nas.html" class="mobile-link text-lg font-bold text-slate-100 hover:text-amber-400 font-serif uppercase tracking-widest py-2">ŠKOLA</a>
+        <a href="kurzy.html" class="mobile-link text-lg font-bold text-slate-100 hover:text-amber-400 font-serif uppercase tracking-widest py-2">TRÉNINKY</a>
+        <a href="discipliny.html" class="mobile-link text-lg font-bold text-slate-100 hover:text-amber-400 font-serif uppercase tracking-widest py-2">ZBRANĚ</a>
+        <a href="kontakt.html" class="mobile-link text-lg font-bold text-slate-100 hover:text-amber-400 font-serif uppercase tracking-widest py-2">KONTAKT</a>
+        <a href="vyzkousej-si-serm.html" class="mobile-link w-full max-w-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-black py-4 rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all text-center mt-4">⚔️ VYZKOUŠET ŠERM ➔</a>
+      </nav>
+
+      <div class="pt-6 border-t border-slate-800 text-center text-xs text-slate-400 space-y-2">
+        <p>📍 Pelhřimovská sportovní hala</p>
+        <p>✉️ <a href="mailto:info@sermpelhrimov.cz" class="text-amber-400 hover:underline">info@sermpelhrimov.cz</a> | 📞 <a href="tel:+420777757333" class="text-amber-400 hover:underline">+420 777 757 333</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-28 pb-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <div class="text-center space-y-4 max-w-3xl mx-auto">
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">O naší škole</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold font-serif uppercase tracking-tight text-slate-100">Bojové umění s duší a historickými kořeny</h1>
+        <p class="text-slate-300 text-sm sm:text-base">Škola historického šermu Pelhřimov je komunitní klub věnující se studiu a rekonstrukci evropských bojových umění (HEMA).</p>
+      </div>
+
+      <!-- SCHOOL PHILOSOPHY -->
+      <div class="bg-[#181a22] border border-slate-800 rounded-2xl p-8 md:p-12 space-y-6">
+        <h2 class="text-2xl font-serif font-bold text-slate-100 uppercase border-b border-slate-800 pb-3">Naše filozofie</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Nehrajeme divadlo ani nenacvičujeme scénické souboje pro film. Vyučujeme reálné bojové umění, jak se dochovalo v historických rukopisech a bojových manuálech (Fechtbuch) německé a italské tradice 14. až 16. století.
+        </p>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Spojujeme historickou přesnost s moderním sportovním tréninkem – s důrazem na fyzickou kondici, koordinaci pohybu, bezpečnost a přátelskou atmosféru v týmu.
+        </p>
+      </div>
+
+      <!-- INSTRUCTORS / LEKTORI SECTION -->
+      <div id="lektori" class="space-y-8 pt-4">
+        <div class="text-center space-y-2">
+          <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Vedení tréninků</span>
+          <h2 class="text-3xl font-serif font-bold text-slate-100 uppercase">Naši lektori a instruktoři</h2>
+          <p class="text-slate-300 text-xs sm:text-sm">Zkušení trenéři s dlouholetou praxí v evropských bojových uměních.</p>
+        </div>
+
+        <div id="coaches-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Dynamicky načteno z localStorage / skriptu -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0f1015] border-t border-slate-800 text-slate-400 py-8 text-center text-xs">
+    <p>© 2025 Škola historického šermu Pelhřimov. sermpelhrimov.cz</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const defaultCoaches = [
+        {
+          id: "oskar",
+          name: "Oskar",
+          role: "Instruktor – Dlouhý meč (Pokročilí)",
+          bio: "Zaměřuje se na výuku pokročilých technik dlouhého meče, biomechaniku pohybu, taktický sparring a rozbor historických manuálů.",
+          image: "images/trener-1.jpg"
+        },
+        {
+          id: "martin",
+          name: "Martin",
+          role: "Instruktor – Dlouhý meč (Začátečníci)",
+          bio: "Věnuje se novým členům. Metodicky vyučuje základy držení meče, seků, krytů a krokového ústrojí v bezpečném prostředí.",
+          image: "images/trener-2.jpg"
+        },
+        {
+          id: "viking",
+          name: "Viking",
+          role: "Instruktor – Tesák & Ringen (společně s Oskarem)",
+          bio: "Specialista na jednoruční tesák a zápas Ringen, tréninky vede společně s Oskarem. Vyučuje práci s distancí, rychlost reakce a dynamiku boje na krátkou vzdálenost.",
+          image: "images/trener-3.jpg"
+        }
+      ];
+
+      const storedCoaches = localStorage.getItem("serm_coaches");
+      const coaches = storedCoaches ? JSON.parse(storedCoaches) : defaultCoaches;
+      const container = document.getElementById("coaches-container");
+
+      if (container) {
+        container.innerHTML = coaches.map((coach, index) => `
+          <div class="bg-[#181a22] border border-slate-800 hover:border-amber-500/40 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 transition-all group">
+            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-amber-500/40 shadow-lg shrink-0 bg-[#0f1015]">
+              <img src="${coach.image || 'images/logo.png'}" alt="${coach.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.onerror=null; this.src='images/logo.png';">
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-xl font-serif font-bold text-slate-100 uppercase">${coach.name}</h3>
+              <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block">${coach.role}</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">${coach.bio}</p>
+          </div>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+</html>
